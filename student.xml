@@ -1,0 +1,6 @@
+<?xml-stylesheet type="text/xsl" href="styleStudent.xslt" ?>
+<IVSem>
+	<student name="Satvik Singh" rollno="CO18344" />
+		<student name="Rajat Singh" rollno="CO18339" />
+			<student name="Yatin Goyal" rollno="CO183XX" />
+</IVSem>
