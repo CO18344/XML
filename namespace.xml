@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--abcd is prefix-->
+<!--Sample Namespace Creation-->
+<root>
+	<abcd:class xmlns:abcd="http://ccet.ac.in/namespaces/student/config">
+		<abcd:student>
+			Details about a student
+		</abcd:student>
+	</abcd:class>
+</root>
