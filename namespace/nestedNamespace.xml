@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Same prefix for different namespace uri is not allowed unless nested-->
+
+<hr:config xmlns:hr="http://www.xyz.com/namespaces/config">
+	
+  <hr:applicationUsers xmlns:hr="http://xyz.com/namespaces/config2">
+    <hr:user firstName="Satvik" lastName="Singh" />
+    <hr:user firstName="Santosh" lastName="Singh" />
+    <hr:user firstName="NEw" lastName="York" />
+	</hr:applicationUsers>
+  
+</hr:config>
