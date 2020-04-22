@@ -1,0 +1,40 @@
+books{
+
+}
+
+book{
+	
+	display:block;
+	margin-bottom:20px;
+}
+
+bookname
+{
+	animation:colorchange 4s ease-in 1s 1;
+	display:block;
+}
+
+@keyframes colorchange
+{
+	0%{color:red;}
+	10%{color:green;}
+	20%{color:yellow;}
+	30%{color:blue;}
+	40%{color:red;}
+	50%{color:green;}
+	60%{color:orange;}
+	70%{color:gray;}
+	80%{color:pink;}
+	90%{color:silver};
+	100%{color:gold;}
+}
+
+author
+{
+	color:green;
+}
+price
+{
+	display:block;
+	color:blue;
+}
