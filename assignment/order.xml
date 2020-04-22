@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<orders xmlns="http://www.assignment.com/orders"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.assignment.com/orders order.xsd">
+
+<order orderID="1" requestDate="2020-05-23">
+	<description>The order belongs to CCET</description>
+	<lineItems>
+		<lineItem>
+			<book bookID="21">
+				<bookName>Harry Potter</bookName>
+				<genre>science-fiction</genre>
+				<publishDate>2020-05-23</publishDate>
+				<authors>
+					<author>
+						<bio>Biodata</bio>
+						<lastname>Singh</lastname>
+						<firstname>Satvik</firstname>
+						<penName>This is my pen name</penName>
+					</author>
+				</authors>
+			</book>
+			<qty>5</qty>
+			<price>156</price>
+		</lineItem>
+		<lineItem>
+			<book bookID="24">
+				<bookName>Harry Potter2</bookName>
+				<genre>science-fiction</genre>
+				<publishDate>2020-05-23</publishDate>
+				<authors>
+					<author>
+						<bio>Biodata2</bio>
+						<lastname>Singh2</lastname>
+						<firstname>Satvik2</firstname>
+						<penName>This is my pen name2</penName>
+					</author>
+				</authors>
+			</book>
+			<qty>6</qty>
+			<price>151</price>
+		</lineItem>
+	</lineItems>
+
+</order>
+</orders>
