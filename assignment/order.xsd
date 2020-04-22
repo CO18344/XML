@@ -1,0 +1,77 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+xmlns:orders="http://www.assignment.com/orders"
+targetNamespace="http://www.assignment.com/orders"
+elementFormDefault="qualified">
+<element name="orders">
+	<complexType>
+		<sequence>
+			<element name="order" minOccurs="0" maxOccurs="unbounded">
+				<complexType>
+					<sequence>
+						<element name="description" type="string"/>
+						<element name="lineItems">
+							<complexType>
+								<sequence>
+									<element name="lineItem" minOccurs="0" maxOccurs="unbounded">
+										<complexType>
+											<sequence>
+												<element name="book" type="orders:BookType"/>
+												<element name="qty" type="nonNegativeInteger"/>
+												<element name="price" type="positiveInteger"/>
+											</sequence>
+										</complexType>
+									</element>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+					<attributeGroup ref="orders:OrderAttributes"/>
+				</complexType>
+			</element>
+		</sequence>
+	</complexType>
+</element>
+
+<attributeGroup name="OrderAttributes">
+	<attribute name="orderID" type="positiveInteger"/>
+	<attribute name="requestDate" type="date"/>
+</attributeGroup>
+
+
+
+<complexType name="BookType">
+		<sequence>
+			<element name="bookName" type="string"/>
+			<element name="genre">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="science-fiction"/>
+							<enumeration value="mystery"/>
+							<enumeration value="thriller"/>
+							<enumeration value="drama"/>
+						</restriction>
+					</simpleType>
+			</element>
+			<element name="publishDate" type="date"/>
+			<element name="authors">
+				<complexType>
+					<sequence>
+						<element name="author">
+							<complexType>
+								<sequence>
+									<element name="bio" type="string"/>
+									<element name="lastname" type="string"/>
+									<element name="firstname" type="string"/>
+									<element name="penName" type="string" minOccurs="0" maxOccurs="1"/>
+								</sequence>
+							</complexType>
+						</element>
+					</sequence>
+				</complexType>
+			</element>
+		</sequence>
+		<attribute name="bookID" type="positiveInteger"/>
+</complexType>
+
+
+</schema>
