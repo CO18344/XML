@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="cssForXml.css"?>
+<books>
+	<book>
+		<bookid>1</bookid>
+		<bookname>Operating System Principles</bookname>
+		<price>1500</price>
+		<authors>
+			<author>Abraham Silberschatz</author>
+			<author>Peter Baer Galvin</author>
+			<author>Greg Gagne</author>
+		</authors>
+	</book>
+	
+	<book>
+		<bookid>2</bookid>
+		<bookname>Atomic Habits</bookname>
+		<price>250</price>
+		<authors>
+			<author>James Clear</author>
+		</authors>
+	</book>
+	
+	
+	<book>
+		<bookid>3</bookid>
+		<bookname>Software Engineering - A Practitioner Approach</bookname>
+		<price>600</price>
+		<authors>
+			<author>Pressman</author>
+		</authors>
+	</book>
+</books>
